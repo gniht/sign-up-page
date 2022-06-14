@@ -19,6 +19,7 @@
     <p class="preamble">Sign up now to get started.</p>
     <p class="preamble">You <i>know</i> you want to.</p>
     <div class="input-container">
+      <h2>Let's do this!</h2>
       <form>
         <label class="form-left" for="first-name">FIRST NAME</label>
         <input class="form-left" type="text" name="first-name" id="first-name">
@@ -28,9 +29,14 @@
         <input class="form-left" type="email" name="email" id="email">
         <label class="form-right" for="phone">PHONE NUMBER</label>
         <input class="form-right" type="tel" name="phone" id="phone">
+        <label class="form-left" for="pw">PASSWORD</label>
+        <input class="form-left" type="password" name="pw" id="pw" required minlength="6">
+        <label class="form-right" for="pw-confirm">CONFIRM PASSWORD</label>
+        <input class="form-right" type="password" name="pw-confirm" id="pw-confirm" required minlength="6">
       </form>
     </div>
-    <button class="submit-btn">Create Account</button>    
+    <button class="submit-btn">Create Account</button>
+    <p>Already have an account? <a>Log in</a></p>    
   </div>
   
   

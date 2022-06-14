@@ -51,6 +51,62 @@ img {
 }
 
 .input-container {
+  border: none;
+  display: grid;
   background-color: white;
-  grid-template-columns: 1fr 1fr;  
+  grid-template-columns: 1fr 1fr; 
+  box-shadow: 0px 3px 12px darkgrey; 
+}
+
+.form-left {
+  grid-column: 1/2;
+}
+.form-right {
+  grid-column: 3/4;
+}
+
+input {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 2.2rem;
+  width: 70%;
+}
+
+input:focus{
+  border: 1px solid blue;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+.submit-btn {
+  background-color: #596D48;
+  color: white;
+  height: 3rem;
+  font-weight: 500;
+  font-size: large;
+  margin: 35px 0 35px 45px;
+  padding: 0px 40px;
+  border: none;
+  border-radius: 5px;
+}
+
+.submit-btn:hover{
+  background-color: #203012;
+}
+
+a {
+  font-weight: 600;
+  color: #596D48;
+}
+
+a:hover {
+  color: #203012;
+  text-decoration: underline;
+  cursor: pointer;  
+}
+
+p {
+  margin-left: 45px;
 }
