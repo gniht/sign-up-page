@@ -24,3 +24,26 @@ img {
 
 /* Above is a reset I found at https://www.digitalocean.com/community/tutorials/css-minimal-css-reset */
 
+.logo-container {
+  display: flex;
+  justify-content: center;  
+  height: 16vh;
+  background-color: black;
+  color: white;
+  opacity: .8;  
+}
+
+.odin-title {
+  display: flex;
+  align-self: center;
+  font-size: 100%;
+}
+
+.right-side {
+  background-color: whitesmoke;
+}
+
+.input-container {
+  background-color: white;
+  grid-template-columns: 1fr 1fr;  
+}
