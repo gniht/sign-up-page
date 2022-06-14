@@ -24,9 +24,14 @@ img {
 
 /* Above is a reset I found at https://www.digitalocean.com/community/tutorials/css-minimal-css-reset */
 
+@font-face {
+  font-family: Norse-Bold;
+  src: url("./src/Norse-Bold.otf") format("opentype");
+}
+
 .logo-container {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   height: 16vh;
   background-color: black;
   color: white;
@@ -34,9 +39,11 @@ img {
 }
 
 .odin-title {
+  font-family: Norse-Bold;
   display: flex;
-  align-self: center;
-  font-size: 100%;
+  height: fit-content;  
+  align-self: center;  
+  font-size: 11vh;
 }
 
 .right-side {
