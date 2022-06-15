@@ -29,48 +29,96 @@ img {
   src: url("./src/Norse-Bold.otf") format("opentype");
 }
 
-.logo-container {
+body {  
+  background-color: rgba(1, 1, 1, .85);
   display: flex;
   justify-content: center;
-  height: 16vh;
-  background-color: black;
-  color: white;
-  opacity: .8;  
 }
 
-.odin-title {
+.main {  
+  padding: max(5%, 20px);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: clamp(703px, 880px, 1024px);
+  width: min(100vw, 1400px);
+}
+
+.logo-container {
+  position: relative;
+  top: 17%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  height: 12vh;
+  width: 100%;
+  background-color: rgba(0,0,0, .5);
+  color: rgba(255,255,255, 1);     
+}
+
+.odin-title {   
   font-family: Norse-Bold;
   display: flex;
   height: fit-content;  
   align-self: center;  
-  font-size: 11vh;
+  font-size: 8vh;
+}
+
+.left-side {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-image: url(./src/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
 }
 
 .right-side {
+  grid-template-rows: 1fr 2fr 1fr;
+  padding-top: 20px;  
   background-color: whitesmoke;
 }
 
-.input-container {
-  border: none;
+.odinface {
+  opacity: 1;
+}
+
+form {
   display: grid;
-  background-color: white;
-  grid-template-columns: 1fr 1fr; 
-  box-shadow: 0px 3px 12px darkgrey; 
+  grid-template-columns: 45px 1fr 1fr;  
 }
 
-.form-left {
-  grid-column: 1/2;
-}
-.form-right {
-  grid-column: 3/4;
+label {
+  display: block;
+  margin-bottom: 3px;
 }
 
-input {
+input {  
   border: 1px solid lightgray;
   border-radius: 5px;
   height: 2.2rem;
-  width: 70%;
+  font-size: 1rem;
+  width: 70%;  
 }
+
+
+.input-container {   
+  border: none;  
+  background-color: white;    
+  box-shadow: 0px 3px 12px darkgrey;
+  padding: 30px 0px; 
+}
+
+.form-left {
+  margin-top: 20px;
+  grid-column: 2/3;
+}
+
+.form-right { 
+  margin-top: 20px;
+  grid-column: 3/4;
+}
+
 
 input:focus{
   border: 1px solid blue;
@@ -107,6 +155,27 @@ a:hover {
   cursor: pointer;  
 }
 
-p {
-  margin-left: 45px;
+.preamble-box {
+  width: 75%;
+  margin: 45px;
 }
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.3rem;  
+}
+
+.login {
+  margin: 0 0 30px 45px;
+}
+
+h2 {
+  margin: 10px 45px;    
+}
+
+.pw-not-matching {
+  margin-left: 10px;
+  font-size: .9rem;
+  color: red;
+}
+
