@@ -179,3 +179,7 @@ h2 {
   color: red;
 }
 
+.invisible {
+  visibility: hidden;  
+}
+
