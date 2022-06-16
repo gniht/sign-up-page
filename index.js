@@ -11,4 +11,6 @@ function checkPasswordMatching () {
   }
 }
 
+// put listener on both inputs in case user confirms prior to entering pw
+password.addEventListener('input', checkPasswordMatching);
 passwordConfirm.addEventListener('input', checkPasswordMatching);
